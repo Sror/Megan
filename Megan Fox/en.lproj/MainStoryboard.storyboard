@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O58-Zh-hy2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Megan Fox View Controller - Megan-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="MeganFoxViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18s-MX-Va9">
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ndp-j5-Qok" appends="YES" id="ZU2-LD-Sut"/>
+                                </connections>
+                            </imageView>
+                            <view hidden="YES" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixy-w8-XRM">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJU-Du-yPI">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="cJw-8U-Rg0"/>
+                                            <constraint firstAttribute="height" constant="29" id="lTK-Wb-tLL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="News">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="9Ue-jE-THR" kind="push" id="Cqo-2z-mqc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hny-gU-0z4">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="6Db-se-Nww"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Images">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ZsM-IX-zkb" kind="push" id="b4s-TQ-YGH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEf-ka-PdD">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="fga-FD-d6F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Video">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DzM-ym-gBC" kind="push" id="jyA-4L-Ezn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJW-9Y-4fS">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="KTf-aD-wkV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="About">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="zlg-Mj-xpY" kind="push" id="Vs1-3V-HoY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58G-kT-sNU">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="Qdv-ep-6qp"/>
+                                            <constraint firstAttribute="width" constant="30" id="pWg-bQ-EHN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="facebook-icon.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="facebookTap:" destination="2" eventType="touchDown" id="Gk0-sb-mtS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrU-7g-NEb">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="8fK-a1-UEX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="twitter-icon.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="twitterTap:" destination="2" eventType="touchDown" id="kvJ-W0-Vqa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="HJU-Du-yPI" firstAttribute="top" secondItem="ixy-w8-XRM" secondAttribute="top" constant="20" symbolic="YES" type="default" id="0Nw-ar-czh"/>
+                                    <constraint firstItem="hrU-7g-NEb" firstAttribute="bottom" secondItem="58G-kT-sNU" secondAttribute="bottom" type="default" id="5Qc-gR-Qic"/>
+                                    <constraint firstItem="gEf-ka-PdD" firstAttribute="trailing" secondItem="Hny-gU-0z4" secondAttribute="trailing" type="default" id="6Ti-oy-Uby"/>
+                                    <constraint firstItem="HJW-9Y-4fS" firstAttribute="leading" secondItem="ixy-w8-XRM" secondAttribute="leading" type="default" id="8pA-HW-4M3"/>
+                                    <constraint firstItem="hrU-7g-NEb" firstAttribute="leading" secondItem="ixy-w8-XRM" secondAttribute="leading" constant="47" id="ASB-10-Gtw"/>
+                                    <constraint firstItem="HJU-Du-yPI" firstAttribute="leading" secondItem="ixy-w8-XRM" secondAttribute="leading" type="default" id="Flc-2t-bdK"/>
+                                    <constraint firstItem="HJW-9Y-4fS" firstAttribute="top" secondItem="gEf-ka-PdD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="IVA-DI-VRR"/>
+                                    <constraint firstItem="hrU-7g-NEb" firstAttribute="top" secondItem="HJW-9Y-4fS" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="J8m-OL-u2z"/>
+                                    <constraint firstItem="gEf-ka-PdD" firstAttribute="top" secondItem="Hny-gU-0z4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="NqV-EQ-WPV"/>
+                                    <constraint firstItem="Hny-gU-0z4" firstAttribute="leading" secondItem="ixy-w8-XRM" secondAttribute="leading" type="default" id="VFc-FD-vlV"/>
+                                    <constraint firstItem="58G-kT-sNU" firstAttribute="top" secondItem="HJW-9Y-4fS" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Xev-k1-zkV"/>
+                                    <constraint firstItem="Hny-gU-0z4" firstAttribute="trailing" secondItem="HJU-Du-yPI" secondAttribute="trailing" type="default" id="XkI-3j-kk6"/>
+                                    <constraint firstItem="HJW-9Y-4fS" firstAttribute="trailing" secondItem="gEf-ka-PdD" secondAttribute="trailing" type="default" id="exT-OS-6I6"/>
+                                    <constraint firstItem="Hny-gU-0z4" firstAttribute="top" secondItem="HJU-Du-yPI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="fIJ-fH-AwX"/>
+                                    <constraint firstItem="58G-kT-sNU" firstAttribute="leading" secondItem="ixy-w8-XRM" secondAttribute="leading" type="default" id="hOO-Rq-M4D"/>
+                                    <constraint firstItem="gEf-ka-PdD" firstAttribute="leading" secondItem="ixy-w8-XRM" secondAttribute="leading" type="default" id="jiC-B6-d12"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ndp-j5-Qok" appends="YES" id="rEn-Ab-5li"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ixy-w8-XRM" secondAttribute="trailing" constant="160" id="3jD-75-abX"/>
+                            <constraint firstItem="18s-MX-Va9" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="CYZ-1T-LAn"/>
+                            <constraint firstItem="ixy-w8-XRM" firstAttribute="top" relation="lessThanOrEqual" secondItem="3" secondAttribute="top" constant="100" type="user" id="MGC-fK-Xo4"/>
+                            <constraint firstItem="ixy-w8-XRM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3" secondAttribute="leading" constant="30" type="user" id="Qeb-Gq-4Ju"/>
+                            <constraint firstAttribute="bottom" secondItem="ixy-w8-XRM" secondAttribute="bottom" constant="20" symbolic="YES" type="user" id="Qib-FN-m4w"/>
+                            <constraint firstItem="ixy-w8-XRM" firstAttribute="top" secondItem="3" secondAttribute="top" constant="64" id="SY0-ZH-XUt"/>
+                            <constraint firstItem="ixy-w8-XRM" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="40" id="VSp-73-QsN"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ixy-w8-XRM" secondAttribute="trailing" constant="160" type="user" id="beI-Of-rBl"/>
+                            <constraint firstItem="18s-MX-Va9" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="fAu-se-i5f"/>
+                            <constraint firstItem="18s-MX-Va9" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="oUv-3s-sBg"/>
+                            <constraint firstItem="18s-MX-Va9" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="xnq-cp-REr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Megan" id="TSN-qy-oLT"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="aboutButton" destination="HJW-9Y-4fS" id="1yG-Hr-sWu"/>
+                        <outlet property="backgroundImageView" destination="18s-MX-Va9" id="cim-Jk-zTG"/>
+                        <outlet property="buttonSetView" destination="ixy-w8-XRM" id="64I-gD-P2u"/>
+                        <outlet property="facebookButton" destination="58G-kT-sNU" id="Cre-7H-S7Y"/>
+                        <outlet property="imagesButton" destination="Hny-gU-0z4" id="XCm-wB-KlO"/>
+                        <outlet property="newsButton" destination="HJU-Du-yPI" id="qOn-2B-wfU"/>
+                        <outlet property="tapRecognizer" destination="Ndp-j5-Qok" id="O7J-NN-JP5"/>
+                        <outlet property="twitterButton" destination="hrU-7g-NEb" id="SD1-Pu-Rh5"/>
+                        <outlet property="videoButton" destination="gEf-ka-PdD" id="r6e-PN-ndV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ndp-j5-Qok">
+                    <connections>
+                        <action selector="tapOnScreen:" destination="2" id="Xty-O6-xq0"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="840" y="209"/>
+        </scene>
+        <!--News View Controller - News-->
+        <scene sceneID="QtP-z4-5jN">
+            <objects>
+                <viewController id="9Ue-jE-THR" customClass="NewsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4sb-TF-dHJ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTZ-43-9sA">
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9Ue-jE-THR" id="K0k-bR-ibI"/>
+                                </connections>
+                            </webView>
+                            <imageView alpha="0.75" contentMode="scaleToFill" image="back-arrow-red-circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="4e2-od-TdU">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="UFA-LN-AnS"/>
+                                    <constraint firstAttribute="height" constant="50" id="kbI-9f-Fw7"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Jbu-ao-IFK" appends="YES" id="XOx-oa-mcc"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fTZ-43-9sA" firstAttribute="trailing" secondItem="4sb-TF-dHJ" secondAttribute="trailing" type="default" id="H0F-ik-HG7"/>
+                            <constraint firstItem="fTZ-43-9sA" firstAttribute="bottom" secondItem="4sb-TF-dHJ" secondAttribute="bottom" type="default" id="O4I-ft-4e4"/>
+                            <constraint firstItem="4e2-od-TdU" firstAttribute="top" secondItem="4sb-TF-dHJ" secondAttribute="top" constant="50" id="Rea-cL-eVM"/>
+                            <constraint firstItem="fTZ-43-9sA" firstAttribute="leading" secondItem="4sb-TF-dHJ" secondAttribute="leading" type="default" id="SJS-JP-8H4"/>
+                            <constraint firstItem="fTZ-43-9sA" firstAttribute="top" secondItem="4sb-TF-dHJ" secondAttribute="top" type="default" id="Uiw-Cu-Z0m"/>
+                            <constraint firstItem="4e2-od-TdU" firstAttribute="leading" secondItem="4sb-TF-dHJ" secondAttribute="leading" constant="13" id="p5Y-qU-elV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="News" id="6nb-qh-gzB"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <connections>
+                        <outlet property="backImageView" destination="4e2-od-TdU" id="a3C-mj-Gld"/>
+                        <outlet property="backTapGestureRecognizer" destination="Jbu-ao-IFK" id="51t-7c-TFr"/>
+                        <outlet property="webView" destination="fTZ-43-9sA" id="C5c-A8-tNp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9T-gr-hra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Jbu-ao-IFK">
+                    <connections>
+                        <action selector="backTap:" destination="9Ue-jE-THR" id="GBM-EO-4Qk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1445" y="-525"/>
+        </scene>
+        <!--Images View Controller - Images-->
+        <scene sceneID="7B4-CB-RnW">
+            <objects>
+                <viewController id="ZsM-IX-zkb" customClass="ImagesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nbI-J1-XG8">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M76-hM-TDL">
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZsM-IX-zkb" id="ggy-iY-2HB"/>
+                                </connections>
+                            </webView>
+                            <imageView alpha="0.75" contentMode="scaleToFill" image="back-arrow-red-circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="5uw-tN-DkM">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="C6M-XM-CcA"/>
+                                    <constraint firstAttribute="height" constant="50" id="elS-I0-FSQ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WUs-5t-hij" appends="YES" id="kar-1e-M9Z"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5uw-tN-DkM" firstAttribute="leading" secondItem="nbI-J1-XG8" secondAttribute="leading" constant="13" id="0oI-c2-b9F"/>
+                            <constraint firstItem="M76-hM-TDL" firstAttribute="top" secondItem="nbI-J1-XG8" secondAttribute="top" type="default" id="NPX-q9-zui"/>
+                            <constraint firstItem="M76-hM-TDL" firstAttribute="leading" secondItem="nbI-J1-XG8" secondAttribute="leading" type="default" id="Z5n-Wy-nbZ"/>
+                            <constraint firstItem="5uw-tN-DkM" firstAttribute="top" secondItem="nbI-J1-XG8" secondAttribute="top" constant="50" id="iu0-sG-hAi"/>
+                            <constraint firstItem="M76-hM-TDL" firstAttribute="bottom" secondItem="nbI-J1-XG8" secondAttribute="bottom" type="default" id="jWJ-Gz-8Vz"/>
+                            <constraint firstItem="M76-hM-TDL" firstAttribute="trailing" secondItem="nbI-J1-XG8" secondAttribute="trailing" type="default" id="qUr-N5-kym"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Images" id="DMa-Wa-Xg4"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <connections>
+                        <outlet property="backImageView" destination="5uw-tN-DkM" id="mGy-92-sek"/>
+                        <outlet property="backTapGestureRecognizer" destination="WUs-5t-hij" id="G3W-fV-EGm"/>
+                        <outlet property="webView" destination="M76-hM-TDL" id="ZPY-rc-Kdg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gb-rH-4FQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WUs-5t-hij">
+                    <connections>
+                        <action selector="backTap:" destination="ZsM-IX-zkb" id="J8C-hx-e9z"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1445" y="209"/>
+        </scene>
+        <!--About View Controller - About-->
+        <scene sceneID="P7h-bL-pDx">
+            <objects>
+                <viewController id="zlg-Mj-xpY" customClass="AboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jDN-HZ-WtU">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nd-8z-RHY">
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zlg-Mj-xpY" id="KYa-0y-LFH"/>
+                                </connections>
+                            </webView>
+                            <imageView alpha="0.75" contentMode="scaleToFill" image="back-arrow-red-circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="8vO-H1-Az2">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ka7-HX-3Ko"/>
+                                    <constraint firstAttribute="width" constant="50" id="u7T-PV-ngC"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WBV-Z3-fZ8" appends="YES" id="mPa-wi-sr5"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3nd-8z-RHY" firstAttribute="leading" secondItem="jDN-HZ-WtU" secondAttribute="leading" type="default" id="2rN-a3-K6R"/>
+                            <constraint firstItem="3nd-8z-RHY" firstAttribute="trailing" secondItem="jDN-HZ-WtU" secondAttribute="trailing" type="default" id="HvD-D0-Fy9"/>
+                            <constraint firstItem="3nd-8z-RHY" firstAttribute="bottom" secondItem="jDN-HZ-WtU" secondAttribute="bottom" type="default" id="Lkg-sC-se6"/>
+                            <constraint firstItem="3nd-8z-RHY" firstAttribute="top" secondItem="jDN-HZ-WtU" secondAttribute="top" type="default" id="Wk8-5h-Szw"/>
+                            <constraint firstItem="8vO-H1-Az2" firstAttribute="top" secondItem="jDN-HZ-WtU" secondAttribute="top" constant="50" id="etS-rX-74Y"/>
+                            <constraint firstItem="8vO-H1-Az2" firstAttribute="leading" secondItem="jDN-HZ-WtU" secondAttribute="leading" constant="13" id="pYs-5I-9no"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="GXg-6h-ysc"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <connections>
+                        <outlet property="backImageView" destination="8vO-H1-Az2" id="x1R-Yg-gP6"/>
+                        <outlet property="backTapGestureRecognizer" destination="WBV-Z3-fZ8" id="bpS-hN-Jor"/>
+                        <outlet property="webView" destination="3nd-8z-RHY" id="4PO-wf-Wlk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h01-sR-6FV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WBV-Z3-fZ8">
+                    <connections>
+                        <action selector="backTap:" destination="zlg-Mj-xpY" id="UsJ-KT-YIj"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1445" y="1627"/>
+        </scene>
+        <!--Video View Controller - Video-->
+        <scene sceneID="n1A-t2-LLY">
+            <objects>
+                <viewController id="DzM-ym-gBC" customClass="VideoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="npL-xB-yPa">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmD-za-62c">
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="DzM-ym-gBC" id="eqe-30-vNf"/>
+                                </connections>
+                            </webView>
+                            <imageView alpha="0.75" contentMode="scaleToFill" image="back-arrow-red-circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="J8w-dj-CaC">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="T8c-Fj-kF0"/>
+                                    <constraint firstAttribute="width" constant="50" id="hN1-RY-hXg"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ay7-yo-vWU" appends="YES" id="9kF-tC-hBe"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J8w-dj-CaC" firstAttribute="top" secondItem="npL-xB-yPa" secondAttribute="top" constant="50" id="J8F-xT-G49"/>
+                            <constraint firstItem="UmD-za-62c" firstAttribute="trailing" secondItem="npL-xB-yPa" secondAttribute="trailing" type="default" id="NKP-9x-c0v"/>
+                            <constraint firstItem="UmD-za-62c" firstAttribute="bottom" secondItem="npL-xB-yPa" secondAttribute="bottom" type="default" id="VNN-sr-viR"/>
+                            <constraint firstItem="UmD-za-62c" firstAttribute="top" secondItem="npL-xB-yPa" secondAttribute="top" type="default" id="XxU-w4-BaO"/>
+                            <constraint firstItem="UmD-za-62c" firstAttribute="leading" secondItem="npL-xB-yPa" secondAttribute="leading" type="default" id="doh-yS-Vck"/>
+                            <constraint firstItem="J8w-dj-CaC" firstAttribute="leading" secondItem="npL-xB-yPa" secondAttribute="leading" constant="13" id="g74-DG-S8j"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Video" id="O8B-mP-uFK"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <connections>
+                        <outlet property="backImageView" destination="J8w-dj-CaC" id="vo9-wI-Ucz"/>
+                        <outlet property="backTapGestureRecognizer" destination="ay7-yo-vWU" id="yD9-eY-yxD"/>
+                        <outlet property="webView" destination="UmD-za-62c" id="cMX-Xb-57D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaL-lN-ZKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ay7-yo-vWU">
+                    <connections>
+                        <action selector="backTap:" destination="DzM-ym-gBC" id="z3Y-al-HlC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1445" y="922"/>
+        </scene>
+        <!--My Navigation View Controller-->
+        <scene sceneID="i91-K2-R2Y">
+            <objects>
+                <navigationController id="O58-Zh-hy2" customClass="MyNavigationViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="Aw8-dV-218">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="X1I-kI-YBo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6wa-o1-8Fe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="209"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back-arrow-red-circle.png" width="112" height="112"/>
+        <image name="facebook-icon.png" width="33" height="33"/>
+        <image name="twitter-icon.png" width="33" height="33"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
